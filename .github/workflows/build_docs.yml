@@ -43,7 +43,7 @@ jobs:
         run: python3 -m pip install ".[docs]"
 
       - name: Build docs
-        run: jupyter book build -W .
+        run: jupyter book build -W docs
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
