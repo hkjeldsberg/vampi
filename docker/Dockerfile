@@ -16,7 +16,7 @@ RUN python3 -m pip install pip setuptools --upgrade
 WORKDIR /tmp/
 
 # Install the Python-module
-RUN git clone --branch ${REPO_BRANCH} --single-branch https://github.com/KVSlab/VaMPy
+RUN git clone --branch ${REPO_BRANCH} --single-branch https://github.com/hkjeldsberg/vampy
 RUN python3 -m pip install ./vampy[all]
 
 
