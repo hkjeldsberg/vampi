@@ -5,7 +5,7 @@
 
 #######################################################################################
 # Book settings
-title                       : VaMPy  # The title of the book. Will be placed in the left navbar.
+title                       : KVSLab  # The title of the book. Will be placed in the left navbar.
 author                      : Henrik A. Kjeldsberg  # The author of the book
 copyright                   : "2023"  # Copyright year to be placed in the footer
 logo                        : logo.png  # A path to the book logo
@@ -26,7 +26,7 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/hkjeldsberg/VaMPy  # Online location of your book
+  url: https://github.com/hkjeldsberg/KVSLab  # Online location of your book
   path_to_book: docs  # Optional path to your book, relative to the repository root
   branch: main  # Which branch of the repository should be used when creating links (optional)
 
@@ -35,3 +35,4 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
+  extra_navbar: See more at <a href="https://github.com/KVSlab">KVSLab</a>
