@@ -5,14 +5,24 @@ format: jb-book
 root: index
 
 parts:
-  - caption: Publications
-    chapters:
-    - file: software
-
-  - caption: Contact
-    chapters:
-    - file: authors
-
   - caption: Installation
     chapters:
       - file: installation
+      - file: issues
+
+  - caption: Using VaMPy
+    chapters:
+    - file: overview
+    - file: quantities
+    - file: cluster
+    - file: features
+
+  - caption: Tutorials
+    chapters:
+    - file: tutorials
+    - file: artery
+    - file: atrium
+
+  - caption: Python API
+    chapters:
+    - file: api
