@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Software and publications &#8212; KVSLab</title>
+    <title>Running a CFD simulation on an HPC cluster &#8212; VaMPy</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,8 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="About the authors" href="authors.html" />
-    <link rel="prev" title="KVSLab organisation at Simula Research Laboratory" href="index.html" />
+    <link rel="next" title="Features and issues" href="features.html" />
+    <link rel="prev" title="Computed quantities" href="quantities.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -97,7 +97,7 @@ const thebe_selector_output = ".output, .cell_output"
       <img src="_static/logo.png" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">KVSLab</h1>
+      <h1 class="site-logo" id="site-title">VaMPy</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -109,35 +109,11 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="index.html">
-                    KVSLab organisation at Simula Research Laboratory
+                    The Vascular Modeling Pypeline
                 </a>
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Publications
- </span>
-</p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Software and publications
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Contact
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="authors.html">
-   About the authors
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Installation
  </span>
@@ -146,6 +122,72 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="installation.html">
    Installation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="issues.html">
+   Known issues
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Using VaMPy
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="overview.html">
+   Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="quantities.html">
+   Computed quantities
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Running a CFD simulation on an HPC cluster
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="features.html">
+   Features and issues
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tutorials
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="tutorials.html">
+   Tutorials
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="artery.html">
+   High-resolution CFD simulation in the internal carotid artery
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="atrium.html">
+   Hemodynamics simulation on a left atrium
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Python API
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="api.html">
+   API Reference
   </a>
  </li>
 </ul>
@@ -221,7 +263,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://github.com/hkjeldsberg/KVSLab"
+        <a href="https://github.com/KVSlab/vampy"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -238,7 +280,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/hkjeldsberg/KVSLab/issues/new?title=Issue%20on%20page%20%2Fsoftware.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/KVSlab/vampy/issues/new?title=Issue%20on%20page%20%2Fcluster.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -266,7 +308,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/software.md"
+        <a href="_sources/cluster.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -303,60 +345,23 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#references">
-   References
-  </a>
- </li>
-</ul>
-
-    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Software and publications</h1>
+                <h1>Running a CFD simulation on an HPC cluster</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#references">
-   References
-  </a>
- </li>
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
@@ -364,35 +369,59 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="software-and-publications">
-<h1>Software and publications<a class="headerlink" href="#software-and-publications" title="Permalink to this headline">#</a></h1>
-<p>A list scientific software developed part of the KVSLab organization, with corresponding publication if available.</p>
-<ul class="simple">
-<li><p>Vascular Modeling Pypeline: <a class="reference external" href="https://github.com/KVSlab/vampy">VaMPy</a></p></li>
-<li><p>Morphological Manipulation: <a class="reference external" href="https://github.com/KVSlab/morphman">morphMan</a> <span id="id1">[<a class="reference internal" href="#id7" title="Henrik A Kjeldsberg, Aslak W Bergersen, and Kristian Valen-Sendstad. Morphman: automated manipulation of vascular geometries. Journal of Open Source Software, 4(35):1065, 2019.">KBVS19</a>]</span></p></li>
-<li><p>Oasis for Moving Domains: <a class="reference external" href="https://github.com/KVSlab/oasismove">OasisMove</a> <span id="id2">[<a class="reference internal" href="#id9" title="Mikael Mortensen and Kristian Valen-Sendstad. Oasis: a high-level/high-performance open source navier–stokes solver. Computer physics communications, 188:177–188, 2015.">MVS15</a>]</span></p></li>
-<li><p><a class="reference external" href="https://github.com/KVSlab/turtlefsi">turtleFSI</a> - a Fluid-Structure Interaction Solver <span id="id3">[<a class="reference internal" href="#id8" title="Aslak W Bergersen, Andreas Slyngstad, Sebastian Gjertsen, Alban Souche, and Kristian Valen-Sendstad. Turtlefsi: a robust and monolithic fenics-based fluid-structure interaction solver. Journal of Open Source Software, 5(50):2089, 2020.">BSG+20</a>]</span></p></li>
-<li><p>Implementation of the 1D blood flow equations in FEniCS: <a class="reference external" href="https://github.com/KVSlab/bloodflow">Artery.fe</a> <span id="id4">[<a class="reference internal" href="#id6" title="Syver D Agdestein, Kristian Valen-Sendstad, and Alexandra K Diem. Artery. fe: an implementation of the 1d blood flow equations in fenics. Journal of Open Source Software, 3(32):1107, 2018.">AVSD18</a>]</span></p></li>
-</ul>
-<section id="references">
-<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">#</a></h2>
-<div class="docutils container" id="id5">
-<dl class="citation">
-<dt class="label" id="id6"><span class="brackets"><a class="fn-backref" href="#id4">AVSD18</a></span></dt>
-<dd><p>Syver D Agdestein, Kristian Valen-Sendstad, and Alexandra K Diem. Artery. fe: an implementation of the 1d blood flow equations in fenics. <em>Journal of Open Source Software</em>, 3(32):1107, 2018.</p>
-</dd>
-<dt class="label" id="id8"><span class="brackets"><a class="fn-backref" href="#id3">BSG+20</a></span></dt>
-<dd><p>Aslak W Bergersen, Andreas Slyngstad, Sebastian Gjertsen, Alban Souche, and Kristian Valen-Sendstad. Turtlefsi: a robust and monolithic fenics-based fluid-structure interaction solver. <em>Journal of Open Source Software</em>, 5(50):2089, 2020.</p>
-</dd>
-<dt class="label" id="id7"><span class="brackets"><a class="fn-backref" href="#id1">KBVS19</a></span></dt>
-<dd><p>Henrik A Kjeldsberg, Aslak W Bergersen, and Kristian Valen-Sendstad. Morphman: automated manipulation of vascular geometries. <em>Journal of Open Source Software</em>, 4(35):1065, 2019.</p>
-</dd>
-<dt class="label" id="id9"><span class="brackets"><a class="fn-backref" href="#id2">MVS15</a></span></dt>
-<dd><p>Mikael Mortensen and Kristian Valen-Sendstad. Oasis: a high-level/high-performance open source navier–stokes solver. <em>Computer physics communications</em>, 188:177–188, 2015.</p>
-</dd>
-</dl>
+  <section class="tex2jax_ignore mathjax_ignore" id="running-a-cfd-simulation-on-an-hpc-cluster">
+<h1>Running a CFD simulation on an HPC cluster<a class="headerlink" href="#running-a-cfd-simulation-on-an-hpc-cluster" title="Permalink to this headline">#</a></h1>
+<p>Here, we present an automated pipeline for performing CFD simulations
+followed by post-processing of the results on an HPC cluster. For this
+tutorial, we have used the supercomputer
+<a class="reference external" href="https://documentation.sigma2.no/hpc_machines/saga.html">Saga</a> as our
+starting point.</p>
+<p>The automated procedure for running simulations on a cluster is part of
+the preprocessing script <code class="docutils literal notranslate"><span class="pre">automatedPreProcessing.py</span></code>. The
+script includes the <code class="docutils literal notranslate"><span class="pre">--simulation-config</span></code> flag (<code class="docutils literal notranslate"><span class="pre">-sc</span></code> for short), which
+should be followed by the path to a configuration file for the remote
+simulation. As a template, we have included the configuration file
+<code class="docutils literal notranslate"><span class="pre">ssh_config.json</span></code>, which the user will need to edit. The template
+contains the following fields, and is set up for the <code class="docutils literal notranslate"><span class="pre">Artery.py</span></code>
+problem:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;hostname&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;YOUR_HOSTNAME&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;username&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;YOUR_USERNAME&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;password&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;YOUR_PASSWORD&quot;</span><span class="p">,</span>
+
+<span class="w">  </span><span class="nt">&quot;remoteDataDir&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Oasis&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;localDataDir&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;test/Case_test_artery&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;simDataDir&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;simulation&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;postProcDataDir&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;automatedPostProcessing&quot;</span><span class="p">,</span>
+
+<span class="w">  </span><span class="nt">&quot;job_script&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;artery_job.sh&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;problem_file&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Artery.py&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;flow_rate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ICA_values&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
-</section>
+<p>Here, we assume that the <em>Oasis</em> framework has been cloned
+or copied to the home directory on the cluster. The capitalized values
+are to be edited by the user, and possibly the <code class="docutils literal notranslate"><span class="pre">remoteDataDir</span></code> depending
+on the location of the remote <em>Oasis</em> folder. The
+<code class="docutils literal notranslate"><span class="pre">localDataDir</span></code> points to the path where the mesh, mesh information, and
+probe points are stored, and we assume that the file defined by the
+<code class="docutils literal notranslate"><span class="pre">job_script</span></code> key is located there as well. The job script currently
+located within the <code class="docutils literal notranslate"><span class="pre">test/Case_test_artery</span></code> folder is specific for the
+<code class="docutils literal notranslate"><span class="pre">Artery.py</span></code> problem run on Saga, but is adaptable to other simulations
+and clusters. The user will also need to edit <code class="docutils literal notranslate"><span class="pre">artery_job.sh</span></code> with their
+username information, cluster project, and FEniCS module location, all
+highlighted in the example job script. Then, to perform pre-processing,
+CFD simulation, and post-processing through a single script, run the
+following command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>python<span class="w"> </span>automatedPreProcessing/automatedPreProcessing.py<span class="w"> </span>-m<span class="w"> </span>diameter<span class="w"> </span>-i<span class="w"> </span>test/Case_test_artery/artery.vtp<span class="w"> </span>-c<span class="w"> </span><span class="m">1</span>.3<span class="w"> </span>-sc<span class="w"> </span>automatedPreProcessing/ssh_config.json<span class="w"> </span>-vz<span class="w"> </span>False
+</pre></div>
+</div>
+<p>If the script is successful, it should output:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Submitted batch job XXXXXXX</span>
+</pre></div>
+</div>
+<p>where <code class="docutils literal notranslate"><span class="pre">XXXXXXX</span></code> is the job ID.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -422,17 +451,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="index.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="quantities.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">KVSLab organisation at Simula Research Laboratory</p>
+            <p class="prev-next-title">Computed quantities</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="authors.html" title="next page">
+    <a class='right-next' id="next-link" href="features.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">About the authors</p>
+        <p class="prev-next-title">Features and issues</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
